@@ -7,4 +7,4 @@ you can intrgrate to your project .
 
 tradePancake.py  ---- auto trade with pancakeswap
 
-bscAccount.py    ----- auto monitor the account and transfer your funds to safe wallet.
+accountMonitor.py    ----- auto monitor the account and transfer your funds to safe wallet.
