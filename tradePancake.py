@@ -3,9 +3,9 @@ import json
 import time
 
 # Trade Bot 	: ver 0.19
-# Author 		: pyang.cn@gmail.com
+# Author 	: pyang.cn@gmail.com
 # Contributor	: Vito
-# Date			: 2022-01-11
+# Date		: 2022-01-11
 # Description	: Auto trade bot including Buy or Sell, Support custom gas fee, slippage, amount.
 #				  Auto check approve before sell, 
 # Know Issues	: 1) need to sleep 10 seconds or more , when you sell token after buy immediately.
@@ -97,8 +97,8 @@ class Trade:
 			 # This is the WBNB amount you want to Swap from..
 			'value'	: tokenPaid,  
 			'gas'	: self.gas,
-        	'gasPrice'	: self.w3.toWei(self.gasPrice, 'gwei'),
-        	'nonce'		: self.w3.eth.get_transaction_count(self.walletAddr)
+        		'gasPrice'	: self.w3.toWei(self.gasPrice, 'gwei'),
+        		'nonce'		: self.w3.eth.get_transaction_count(self.walletAddr)
         })		
 		try:
 			signed_txn = self.w3.eth.account.sign_transaction(pancakeswap2_txn, private_key=self.privateKey)
